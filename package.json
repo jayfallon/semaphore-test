@@ -1,0 +1,37 @@
+{
+  "name": "semaphore-demo-zeit-now",
+  "version": "1.0.0",
+  "description": "Semaphore demo to deploy to ZEIT Now",
+  "main": "api/hello.js",
+  "scripts": {
+    "start": "now dev",
+    "test": "NODE_ENV=test PORT=3000 jest --coverage --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semaphore-demo-zeit-now/semaphore-demo-zeit-now.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/semaphore-demo-zeit-now/semaphore-demo-zeit-now/issues"
+  },
+  "homepage": "https://github.com/semaphore-demo-zeit-now/semaphore-demo-zeit-now#readme",
+  "engines": {
+    "node": "10.16.3"
+  },
+  "dependencies": {
+    "now": "^16.1.2"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "jest": "^24.7.1",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "api/hello.js"
+    ]
+  }
+}
