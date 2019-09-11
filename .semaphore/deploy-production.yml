@@ -16,4 +16,4 @@ blocks:
             - checkout
             - nvm use
             - npm install now -g
-            - now --token $ZEIT_TOKEN -n semaphore-demo-zeit-now
+            - now --token $ZEIT_TOKEN -n semaphore-demo.jayfallon.dev
